@@ -29,22 +29,5 @@ namespace ConsoleApp1
                 Console.WriteLine($"Name= {list.Name}  Age= {list.Age}");
             }
         }
-
-        public static void StudentsDataFetching(List<Student_Details> studentrecords)
-        {
-            var SortedStudentbyAge = (from student in studentrecords orderby student.ID  select student).Take(3);
-
-            foreach (var list in SortedStudentbyAge)
-            {
-                Console.WriteLine($"Name= {list.Name}  Age= {list.ID}");
-            }
-        }
-        public static void SearchStudentDatawithName(List<Student_Details> studentrecords)
-        {
-            var StudentByName = studentrecords.Any(name=>name.Name=="Ajay");
-
-            Console.WriteLine(StudentByName);
-        }
-
     }
 }
