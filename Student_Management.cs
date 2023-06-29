@@ -39,12 +39,6 @@ namespace ConsoleApp1
                 Console.WriteLine($"Name= {list.Name}  Age= {list.ID}");
             }
         }
-        public static void SearchStudentDatawithName(List<Student_Details> studentrecords)
-        {
-            var StudentByName = studentrecords.Any(name=>name.Name=="Ajay");
-
-            Console.WriteLine(StudentByName);
-        }
 
     }
 }
